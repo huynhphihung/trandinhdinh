@@ -13,41 +13,39 @@
 		<link rel="stylesheet" href="app.css" />
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="container">
-				<div class="header">
-					<div class="song-img">
-						<img src="" alt="trandinhdinh" />
-					</div>
-					<div class="song-title"></div>
-					<div class="song-auth"></div>
+		<div class="container">
+			<div class="header">
+				<div class="song-img">
+					<img src="" alt="trandinhdinh" />
 				</div>
-				<div class="timer">
+				<div class="song-title"></div>
+				<div class="song-auth"></div>
+			</div>
+			<div class="timer">
+				<input
+					type="range"
+					name="rangeBar"
+					id="rangeBar"
+					class="rangeBar"
+					value="0" />
+				<div class="time-music">
+					<div class="duration"></div>
+					<div class="remaining"></div>
+				</div>
+			</div>
+			<div class="control-bar">
+				<div class="play-btn btn">
+					<ion-icon name="play-outline"></ion-icon>
+				</div>
+				<div class="vol">
 					<input
 						type="range"
-						name="rangeBar"
-						id="rangeBar"
-						class="rangeBar"
-						value="0" />
-					<div class="time-music">
-						<div class="duration"></div>
-						<div class="remaining"></div>
-					</div>
-				</div>
-				<div class="control-bar">
-					<div class="play-btn btn">
-						<ion-icon name="play-outline"></ion-icon>
-					</div>
-					<div class="vol">
-						<input
-							type="range"
-							min="0"
-							max="100"
-							step="1"
-							name="volume"
-							value="50"
-							id="volume" />
-					</div>
+						min="0"
+						max="100"
+						step="1"
+						name="volume"
+						value="50"
+						id="volume" />
 				</div>
 			</div>
 		</div>

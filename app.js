@@ -73,4 +73,4 @@ rangeBar.addEventListener('change', handleChangeBar);
 volume.addEventListener('change', changeVol);
 
 render();
-setInterval(displayTimer, 500);
+setInterval(displayTimer, 1000);
